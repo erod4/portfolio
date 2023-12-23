@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { Link } from "react-router-dom";
+import "./App.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload, faFile, faSmile } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
+import Main from "./Components/main/Main";
+import About from "./Components/about/About";
+import Stars from "./Components/Stars/Stars";
+import Edu from "./Components/edu/Edu";
+import Projects from "./Components/projects/Projects";
+import Skills from "./Components/skills/Skills";
+import BTTT from "./Components/backToTheTop/BTTT";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Main />
+      <About />
+      <Edu />
+      <Projects />
+      <Skills />
+      <BTTT />
     </div>
   );
 }

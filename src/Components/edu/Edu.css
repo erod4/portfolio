@@ -1,0 +1,27 @@
+.Education {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #223661;
+  justify-content: space-evenly;
+}
+.Institue {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 5px 10px #14274e;
+}
+.School {
+  color: #000;
+  font-size: 35px;
+}
+.Major {
+  color: #000;
+  font-size: 28px;
+}
+.Projected {
+  width: 100%;
+  text-align: center;
+}

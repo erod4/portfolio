@@ -1,0 +1,19 @@
+.Header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+}
+.link {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+.link:hover {
+  color: #aaa;
+}

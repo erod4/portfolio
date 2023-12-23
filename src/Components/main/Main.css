@@ -1,0 +1,35 @@
+.Main {
+  background-image: url(https://wallpaperaccess.com/full/269176.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+}
+
+.linksTo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.linkTo {
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  align-items: center;
+}
+.linkTo:hover {
+  background-color: #fff;
+  color: #000;
+}
