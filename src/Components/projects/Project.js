@@ -4,7 +4,7 @@ const Project = ({ title, imgURL, text, url }) => {
   return (
     <a className="Project" href={url} target="blank">
       <h1 className="Project-Title">{title}</h1>
-      <img className="Project-Img" src={imgURL} />
+      <img alt="img" className="Project-Img" src={imgURL} />
       <p className="Project-Text">{text}</p>
     </a>
   );

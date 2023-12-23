@@ -10,6 +10,7 @@ const About = () => {
       <Title text={"About"} className="title" />
       <div className="Bio-Img-Container ">
         <img
+          alt="img of me"
           className="Bio-Img"
           src="https://res.cloudinary.com/dlhqcd4rs/image/upload/v1703303415/IMG_5326_gi03jk.jpg"
         />
