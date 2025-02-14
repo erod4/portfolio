@@ -1,33 +1,40 @@
-import React from "react";
-import Title from "../Title";
-import "../projects/Projects.css";
-import Project from "./Project";
+import React from 'react'
+import Title from '../Title'
+import '../projects/Projects.css'
+import Project from './Project'
 const Projects = () => {
   return (
-    <div className="Projects" id="projects">
-      <Title text={"Projects"} className={"title"} />
+    <div className='Projects' id='projects'>
+      <Title text={'Projects'} className={'title'} />
       <Project
-        url={"https://github.com/erod4/barkcode"}
-        title={"Pet Alert WebPage"}
+        url={'https://github.com/erod4/ESP-IDF-Plant_Monitor'}
+        title={'PlantSense IoT iOS App'}
         imgURL={
-          "https://www.computersciencedegreehub.com/wp-content/uploads/2023/02/shutterstock_535124956-1024x756.jpg"
+          'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ae/c3/97/aec397be-0fed-3964-775d-514e119527fb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/434x0w.webp'
         }
-        text={
-          "In my recent venture, I conceptualized and developed a MERN (MongoDB, Express.js, React.js, Node.js) stack web application focused on reuniting lost pets with their owners. This innovative platform harnesses QR code technology, allowing pet owners to create detailed pet profiles. These profiles are linked to physical dog tags with unique QR codes. When scanned, these QR codes provide instant access to the pet's information, enabling swift identification. The application also enables users to send instant alerts to the app community, informing them about their lost pets, fostering a collaborative effort in reuniting pets with their families."
+        text={`PlantSense is an iOS app designed to help users monitor their plants in real-time. It connects to a custom-built IoT device via Bluetooth, allowing users to set up WiFi connectivity for data transmission. The device collects key environmental metrics, including soil moisture, temperature, and humidity, which are sent via MQTT to a server. The data is then displayed on a web app, providing users with real-time insights. Additionally, the app alerts users with notifications when plant conditions become suboptimal, ensuring plants receive the care they need. This project combines embedded systems, wireless communication, and cloud technology to create an efficient plant monitoring solution.`}
+        link={
+          <a
+            target='_blank'
+            href='https://apps.apple.com/us/app/plantsense/id6739386742'
+            className='link-app'
+          >
+            Download Here
+          </a>
         }
       />
       <Project
-        url={"https://github.com/erod4/BLE_LORA_PET_TRACKER"}
-        title={"BLE LoRa Pet Tracker"}
+        url={'https://github.com/erod4/Senior-Design'}
+        title={'STM32 DSP Audio Analyzer'}
         imgURL={
-          "https://billpay.slu.edu/C20197_ustores/web/uploaded_images/store_65/CODING.jpg"
+          'https://www.enclustra.com/assets/images/services/Enclustra_Digital_Signal_Processing_with_FPGA.jpg'
         }
         text={
-          "This React Native app leverages LoRa (Long Range) and Bluetooth Low Energy (BLE) technology to offer a sophisticated pet tracking solution. The app features a GPS-enabled tracker that sends location data via LoRa to a receiver, which then transmits this information to the user's iPhone through BLE. Key functionalities include real-time pet location tracking, a remote-controlled buzzer, and an LED light for increased visibility at night. Designed with a user-friendly interface, it ensures efficient tracking and management of pets, particularly beneficial in remote areas. This project demonstrates a harmonious blend of advanced connectivity, energy efficiency, and intuitive design, making it an invaluable tool for pet owners."
+          'This project features an STM32 microcontroller-based audio processing system that performs real-time signal analysis. The system receives an analog audio input, applies signal conditioning, and processes the signal using a digital low-pass filter (LPF) and Fast Fourier Transform (FFT). The processed data is displayed on an LCD screen, providing real-time frequency spectrum visualization. My contributions included designing the digital signal processing (DSP) algorithms, implementing the signal conditioning circuitry, and developing the PCB design. This project showcases expertise in embedded DSP, hardware design, and real-time signal visualization.'
         }
       />
     </div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects
